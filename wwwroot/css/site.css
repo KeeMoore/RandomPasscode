@@ -1,0 +1,78 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+input[type="submit"], button {
+  margin-top: 10px;
+  width: auto;
+  padding: 10px 20px;
+  background-color: rgb(52, 80, 204);
+}
+
+.info-box {
+  border: 1px solid #ccc; /* Border color */
+  padding: 20px; /* Padding inside the box */
+  margin: 20px auto; /* Center the box horizontally */
+  width: 90%; /* Width of the box */
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+}

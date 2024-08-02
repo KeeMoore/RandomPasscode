@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Passcode Generator</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#generateButton').click(function(e) {
+                e.preventDefault();
+                $.ajax({
+                    type: 'POST',
+                    url: '/Home/GeneratePasscode',
+                    success: function(data) {
+                        $('#passcode').text(data.passcode);
+                        $('#count').text(data.count);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="info-box">
+    <h1>Random Passcode #<span id="count">@ViewBag.Count</span></h1>
+    
+    <div id="passcode"></div>
+    <form>
+        <button id="generateButton">Generate</button>
+    </form>
+        </div>
+</body>
+</html>
+
